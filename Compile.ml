@@ -1,15 +1,3 @@
-(** File "Compile.ml", by KWR for CSE305 Spring 2023.
-    Provided code for Assignment 7 mini-project, incorporating A5 key
-    but with 'a fixed to string
-    Usage: ocaml Compile.ml    or    ocaml followed by #use "Compile.ml";;
-    NOT ocamlc --- this does not like the duplication of module names
-
-    *Simplified* by hard-wiring string onto the exp datatype instead of
-    exp where 'a could be int or float (or vector or matrix or etc.)
-    Decoding constants from strings is left to the end.
-    Also soft-pedals the extension idea.  Instead, a note: you may be
-    given a "one-more-thing" add to this file.
- *)
 
 #use "Parser.ml";;
 
