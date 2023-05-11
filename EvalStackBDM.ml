@@ -10,7 +10,7 @@ class ['a] eval_stack_bdm = object (self)
   	method push (data : 'a) = stack <- data::stack
 
   	method peek = match stack with [] -> None 
-  	| head::tail -> Some(head)
+  	| head::tail -> Some(head) 
 
   	method size = let rec sizeh sh = match sh with [] -> 0
   	| head::tail -> 1 + sizeh tail in sizeh stack
