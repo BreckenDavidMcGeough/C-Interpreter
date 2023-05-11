@@ -1,4 +1,3 @@
-
 class storage_bdm = object (self)
 
 	val mutable stack_changes = ([] : string list) (**val so dont have to use self# when referencing variable in methods*)
@@ -28,5 +27,4 @@ class storage_bdm = object (self)
     | a::rest -> print_endline a; pCh rest in pCh stack_changes
 
  end;;
-
 
