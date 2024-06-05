@@ -4,13 +4,13 @@
 
 This project was the final project for CSE305:Theory of Programming Languages, and was the culmination of all of our learning. The code does the following:
 
-*Receives a file containing C code
+* Receives a file containing C code
 
-*Interprets line by line, keeping a realtime and updated stack of initialized variables and their values
+* Interprets line by line, keeping a realtime and updated stack of initialized variables and their values
 
-*Computes binary operations, arithmetic operations, variable initializations, assignments, and reassignments
+* Computes binary operations, arithmetic operations, variable initializations, assignments, and reassignments
 
-*Exits after all C code has been interpreted, allowing the user to see final values stored in variables initialized and reassigned over runtime
+* Exits after all C code has been interpreted, allowing the user to see final values stored in variables initialized and reassigned over runtime
 
 ## Example and visual representation of abstract syntax tree 
 
