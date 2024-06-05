@@ -15,20 +15,33 @@ An example would be: given the three lines of C code 'int y = 3+(5-7*3);\n int x
 
 The abstract syntax tree for 'int x = y + (z = x + y) - z;':
       [=]
+      
       / \
+      
      x   [-]
+     
          / \
+         
        [+]  z
+       
        / \
+       
       y   [=]
+      
           / \
+          
          z   [+]
+         
              / \
+             
             x   y
 
 The context free grammer rules used:
 
 A ::= E | E=A
+
 E ::= T | E+T | E-T
+
 T ::= F | T*F | T/F | T%F
+
 F ::= -F | (A) | <const_or_var>
