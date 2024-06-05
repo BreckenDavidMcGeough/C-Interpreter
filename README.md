@@ -14,6 +14,8 @@ This project was the final project for CSE305:Theory of Programming Languages, a
 
 ## Example and visual representation of abstract syntax tree 
 
+The program converts C code into its respective POSTFIX notation, where from there it can evaluate the line of POSTFIX recursively, building an abstract syntax tree with the specified context free grammar rules.
+
 An example would be: given the three lines of C code 'int y = 3+(5-7*3);\n int x = (y+8)*3;\n y = x+y;', the interpreter would end with the values -28, -15 stored in the variables y and x respectively.
 
 The abstract syntax tree for 'int x = y + (z = x + y) - z;':
@@ -40,7 +42,7 @@ The abstract syntax tree for 'int x = y + (z = x + y) - z;':
              
             x   y
 
-The context free grammer rules used:
+The context free grammar rules used:
 
 A ::= E | E=A
 
